@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #2b2d42;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .game {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .word-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 1em;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  input {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 2px solid #2b2d42;
+    margin-right: 10px;
+  }
+  
+  button {
+    font-size: 1.2em;
+    background-color: #2b2d42;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #44496d
+  }
+  .word-list-container {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  .word-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  #progress-bar-container {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 10px;
+    width: 0%;
+  }
+  #kelime-oyunu{
+    align-items: center;
+  }
+  #percentage-container {
+    position: fixed;
+    top: 20%;
+    left: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #percentage {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+          
+  

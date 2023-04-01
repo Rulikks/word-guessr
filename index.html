@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelime Oyunu</title>
+  <style>
+    h1 {
+			text-align: center;
+			color: white;
+			background-color: rgb(123, 45, 67);
+			padding: 10px;
+			border-radius: 10px;
+		}
+  </style>
+  <link rel="stylesheet" href="dist/css/style.css">
+  <script>
+    // global bir değişken
+let correctLetters = [];
+
+// yüzdelik hesaplama fonksiyonu
+function calculatePercentage() {
+  const percentage = ((correctLetters.length / word.length) * 100).toFixed();
+  document.getElementById('percentage').textContent = percentage + '%';
+}
+
+// harf tahmin edildiğinde çağrılan fonksiyon
+function updateGuesses(letter) {
+  if (word.includes(letter)) {
+    if (!correctLetters.includes(letter)) {
+      correctLetters.push(letter);
+      calculatePercentage();
+    }
+  }
+}
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Kelime Oyunu</h1>
+  </header>
+  <main>
+    <div class="game">
+      <div class="word-display"></div>
+      <form>
+        <label for="guess-input">Harf veya kelime tahmin edin:</label>
+        <input type="text" id="guess-input" required>
+        <button type="submit" id="guess-button">Tahmin Et</button>
+      </form>
+      <div id="message"></div>
+      <div class="game-container">
+        <div class="word-display"></div>
+        <div class="message-container">
+          <p id="message"></p>
+          <p id="success"></p>
+
+        </div>
+        <div class="word-list-container">
+          <h2>Tahmin Edilmesi Gereken Kelimeler:</h2>
+          <ul class="word-list">
+          
+          </ul>
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+
+            <div id="percentage-container">
+              <span id="percentage">0%</span>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <script src="dist/js/script.js"></script>
+</body>
+</html>
